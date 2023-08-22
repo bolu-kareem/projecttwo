@@ -11,6 +11,12 @@ class QuoteList extends StatefulWidget {
 }
 
 class _QuoteListState extends State<QuoteList> {
+  List<String> quotes = [
+    'if you no get money na you sabi o',
+    'lazy man sef don dey chop',
+    'chop life before life chop you',
+
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +27,9 @@ class _QuoteListState extends State<QuoteList> {
         ),
         centerTitle: true,
         backgroundColor: Colors.redAccent,
+      ),
+      body: Column(
+        children: quotes.map((quote)=> Text(quote)).toList(),
       ),
     );
   }
