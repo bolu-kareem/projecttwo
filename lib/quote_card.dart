@@ -29,8 +29,13 @@ class QuoteCard extends StatelessWidget {
                   color: Colors.grey[800],
                 ),
               ),
-              const SizedBox(height: 10.0,),
-            ]
+              const SizedBox(height: 8.0,),
+              TextButton.icon(
+                  onPressed: (){},
+                label: const Text ('delete quote'),
+                icon: const Icon(Icons.delete),
+              )
+            ],
         ),
       ),
     );
